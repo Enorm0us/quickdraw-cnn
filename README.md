@@ -26,6 +26,10 @@ Epoch  9  val_loss 0.2604  val_acc 0.9403   <- 峰值
 Epoch 10  val_loss 0.2704  val_acc 0.9382
 ```
 
+![QuickDraw CNN 10 轮训练曲线](docs/training-curve.png)
+
+左图是训练 / 验证损失，右图是验证准确率；两条损失同步下降、没有出现验证损失回升，说明 10 轮之内还没有开始过拟合。
+
 ## 数据集
 
 Google 官方发布的 QuickDraw 简化版数据按类别存为 `apple.npy`、`banana.npy`…… 每个文件形状 `(N, 784)`，即一张 28×28 的灰度图被展平成一维。
@@ -75,6 +79,7 @@ Dense(10, softmax)
 className.txt            10 个类别名（按字母序）
 saved_model/             训练好的 .h5 模型
 samples/                 两张实测推理样图
+docs/                    训练曲线图
 ```
 
 ## 运行
