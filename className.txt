@@ -1,0 +1,10 @@
+apple
+banana
+bed
+book
+cup
+door
+foot
+hamburger
+key
+sun
